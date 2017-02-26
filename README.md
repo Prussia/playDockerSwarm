@@ -1,5 +1,10 @@
 # playDockerSwarm
 
+###Framework
+<p align="center">
+  <img src="http://blog.daocloud.io/wp-content/uploads/2015/01/swarmarchitecture.jpg" width="450"/>
+</p>
+
 ###Command
 
 - Show Node Status
