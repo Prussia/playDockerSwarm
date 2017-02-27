@@ -2,7 +2,7 @@
 
 ###[Framework](https://yeasy.gitbooks.io/docker_practice/content/swarm/intro.html)
 <p align="center">
-  <img src="http://blog.daocloud.io/wp-content/uploads/2015/01/swarmarchitecture.jpg" width="450"/>
+  <img src="./swarm.png" width="450"/>
 </p>
 
 ###Command
