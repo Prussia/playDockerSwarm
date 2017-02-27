@@ -16,7 +16,6 @@
 
     ```
     $ docker service create --replicas 4 --name <SERVICE_NAME> --publish 8080:8080 tomcat:8-jre8
-    $ docker service create --replicas 4 --name <SERVICE_NAME> --restart-condition on-failure:5  --publish 8080:8080 tomcat:8-jre8
     ```
 - Update service 
   
