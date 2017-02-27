@@ -41,7 +41,10 @@
     - --read-only | false | Mount the container’s root filesystem as read only
     - --replicas | Number of tasks
     - --restart-condition | 	Restart when condition is met (none, on-failure, or any)
-    
+
+- [Mount a shared-storage volume as a data volume](https://docs.docker.com/engine/tutorials/dockervolumes/#/mount-a-shared-storage-volume-as-a-data-volume)
+
+  
 - [docker secret commands](https://docs.docker.com/engine/swarm/secrets/)
   - docker secret create
   - docker secret inspect
