@@ -16,6 +16,7 @@
 
     ```
     $ docker service create --replicas 4 --name <SERVICE_NAME> --publish 8080:8080 tomcat:8-jre8
+    $ docker service create --replicas 4 --name <SERVICE_NAME> --restart-condition on-failure:5  --publish 8080:8080 tomcat:8-jre8
     ```
 - Update service 
   
@@ -33,7 +34,15 @@
   ```
   $ docker service ps <SERVICE_NAME>
   ```
-
+- [docker service](https://docs.docker.com/engine/reference/commandline/service/)
+  - [docker service create](https://docs.docker.com/engine/reference/commandline/service_create/)
+    - --mount | Attach a filesystem mount to the service
+    - --name | Service name
+    - --publish, -p | 	Publish a port as a node port
+    - --read-only | false | Mount the container’s root filesystem as read only
+    - --replicas | Number of tasks
+    - --restart-condition | 	Restart when condition is met (none, on-failure, or any)
+    
 - [docker secret commands](https://docs.docker.com/engine/swarm/secrets/)
   - docker secret create
   - docker secret inspect
