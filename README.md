@@ -20,7 +20,7 @@
 - Create instance on specific machine and bind volume
   
   ```
-  docker service create --name <SERVICE_NAME> \
+  $ docker service create --name <SERVICE_NAME> \
 			   --constraint node.hostname==<host_name> \
 			   --publish <port_out>:<port_in> \
 			   --mount type=bind,source=/path/out/cotainer,destination=/path/in/container \
@@ -31,7 +31,12 @@
    ```
    $ docker service update --publish-add 8080:8080 <SERVICE_NAME>
    ```
-   
+- Restart service after making changes
+  
+  ```
+  $ docker service update --env-add UPDATE=1 <SERVICE_NAME>
+  ```
+  
 - Show all service status
 
   ```
