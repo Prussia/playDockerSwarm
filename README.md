@@ -17,6 +17,15 @@
     ```
     $ docker service create --replicas 4 --name <SERVICE_NAME> --publish 8080:8080 tomcat:8-jre8
     ```
+- Create instance on specific machine and bind volume
+  
+  ```
+  docker service create --name <SERVICE_NAME> \
+			   --constraint node.hostname==<host_name> \
+			   --publish <port_out>:<port_in> \
+			   --mount type=bind,source=/path/out/cotainer,destination=/path/in/container \
+			   <image_name:tag>
+  ```
 - Update service 
   
    ```
