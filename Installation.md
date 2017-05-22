@@ -49,3 +49,7 @@
       --token SWMTKN-1-49nj1cmql0jkz5s954yi3oex3nedyz0fb0xx14ie39trti4wxv-8vxv8rssmk743ojnwacrr2e7c \
       192.168.99.100:2377
   ```
+### Promote the worker to be the manager node  
+  ```
+  $ docker node promote <NODE>
+  ```
