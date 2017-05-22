@@ -37,6 +37,12 @@
   $ docker service update --env-add UPDATE=1 <SERVICE_NAME>
   ```
   
+- Delete the service running on the swarm
+
+  ```
+  $ docker service rm <SERVICE_NAME>
+  ```
+  
 - Show all service status
 
   ```
