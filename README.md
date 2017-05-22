@@ -42,7 +42,13 @@
   ```
   $ docker service rm <SERVICE_NAME>
   ```
-  
+
+- Inspect a service on the swarm
+
+  ```
+  $ docker service inspect --pretty <SERVICE_NAME>
+  ```
+
 - Show all service status
 
   ```
